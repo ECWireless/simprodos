@@ -1,4 +1,8 @@
 import Head from 'next/head'
+import "../sass/styles.scss"
+
+// COMPONENTS
+import Header from '../components/Header'
 
 export default function Home() {
 	return (
@@ -6,8 +10,10 @@ export default function Home() {
 			<Head>
 				<title>SimProdos</title>
 				<link rel="icon" href="/favicon.ico" />
+				<link rel="stylesheet" href="https://use.typekit.net/dpw8jwa.css"></link>
 			</Head>
 
+			<Header />
 			<main>
 				Main Content
 			</main>
@@ -23,8 +29,7 @@ export default function Home() {
 				body {
 					padding: 0;
 					margin: 0;
-					font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-					Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+					font-family: rockwell, sans-serif;
 				}
 
 				* {
