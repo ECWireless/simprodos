@@ -1,0 +1,67 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr 45rem 45rem 1fr;
+    grid-template-rows: 1fr;
+
+    height: 8rem;
+    border-bottom: solid 3px $color-blue;
+
+    &__container {
+        grid-column: 2 / 4;
+
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+
+    &__logo {
+        grid-column: 1 / 2;
+        height: 4rem;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__list {
+        grid-column: 2 / -1;
+        grid-row: 1 / -1;
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+        height: 100%;
+
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-transform: uppercase;
+        color: $color-grey;
+        font-size: 1.6rem;
+    }
+
+    &__item {
+        transition: all .3s ease;
+
+        &:hover {
+            cursor: pointer;
+            color: $color-blue;
+        }
+    }
+
+    &__button {
+        background: $color-blue;
+        color: #fff;
+        padding: 1.5rem 3rem;
+        transition: all .3s ease;
+
+        &:hover {
+            cursor: pointer;
+            box-shadow: $shadow-button;
+        }
+    }
+}
