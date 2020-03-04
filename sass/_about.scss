@@ -97,7 +97,7 @@
 
         width: 54rem;
         height: 54rem;
-        background: linear-gradient(#B8BCBF, rgb(164, 169, 174));
+        background: $color-grey-gradient;
         border-radius: 50%;
         z-index: 3;
 
@@ -124,7 +124,7 @@
         align-self: center;
         justify-self: center;
 
-        background: linear-gradient(#6ACBDE, #69BFF0);
+        background: $color-blue-gradient;
         width: 34rem;
         height: 34rem;
         border-radius: 50%;
@@ -140,7 +140,7 @@
         align-self: center;
         justify-self: center;
 
-        background: linear-gradient(#65E6AB, #69F0D8);
+        background: $color-green-gradient;
         width: 24rem;
         height: 24rem;
         border-radius: 50%;
