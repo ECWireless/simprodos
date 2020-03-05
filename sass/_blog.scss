@@ -1,0 +1,140 @@
+.blog {
+    display: grid;
+    grid-template-columns: 1fr 5rem 40rem 40rem 5rem 1fr;
+    grid-template-rows: 10rem 5rem 50rem;
+
+    // HEADING
+    &__subheading {
+        grid-row: 1 / 2;
+        grid-column: 1 / -1;
+        align-self: flex-start;
+
+        font-size: 2rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+        color: $color-grey;
+    }
+
+    &__line {
+        grid-row: 1 / 2;
+        grid-column: 1 / -1;
+        align-self: center;
+        justify-self: center;
+        margin-bottom: 2rem;
+
+        height: 3px;
+        width: 13rem;
+        background: $color-blue;
+    }
+
+    &__heading {
+        grid-row: 1 / 2;
+        grid-column: 1 / -1;
+        align-self: flex-end;
+
+        font-size: 4rem;
+        font-weight: 400;
+        text-align: center;
+        color: $color-grey;
+    }
+
+    // BLOG
+    &__background {
+        grid-row: 3 / -1;
+        grid-column: 1 / -1;
+
+        background: #B8BCBF;
+        opacity: .25;
+        z-index: -1;
+    }
+
+    &__triangle-1 {
+        grid-row: 3 / -1;
+        grid-column: 2 / 3;
+        align-self: center;
+        justify-self: center;
+
+        height: 5rem;
+        width: 5rem;
+
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        border-right: 50px solid #B8BCBF;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__triangle-2 {
+        grid-row: 3 / -1;
+        grid-column: 5 / 6;
+        align-self: center;
+        justify-self: center;
+
+        height: 5rem;
+        width: 5rem;
+
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        border-left: 50px solid #B8BCBF;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__card {
+        grid-row: 3 / -1;
+        grid-column: 3 / 4;
+        justify-self: center;
+        align-self: center;
+
+        background: #fff;
+        height: 33rem;
+        width: 30rem;
+        border-radius: 40px;
+        box-shadow: $shadow-button;
+
+        display: grid;
+        grid-template-columns: 1fr 22rem 1fr;
+        grid-template-rows: 1fr 4fr;
+        overflow: hidden;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__card-banner {
+        grid-row: 1 / 2;
+        grid-column: 1 / -1;
+
+        height: 100%;
+        width: 100%;
+        background: $color-blue;
+    }
+
+    &__title {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        align-self: center;
+        justify-self: center;
+
+        text-align: center;
+        font-size: 2.2rem;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    &__excerpt {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+
+        font-size: 1.4rem;
+        font-family: $font-secondary;
+        line-height: 2.5rem;
+        margin-top: 3rem;
+    }
+}
