@@ -1,0 +1,83 @@
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 30rem 30rem 30rem 1fr;
+    grid-template-rows: 10rem 15rem;
+
+    background: $color-grey;
+    color: #fff;
+
+    &__heading {
+        grid-row: 1 / 2;
+        grid-column: 2 / -2;
+        justify-self: center;
+        align-self: center;
+
+        font-size: 3.6rem;
+    }
+
+    &__line-top {
+        grid-row: 1 / 2;
+        grid-column: 2 / -2;
+        justify-self: center;
+        align-self: flex-end;
+
+        height: 3px;
+        width: 13rem;
+        background: $color-blue;
+    }
+
+    &__number {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+        justify-self: flex-end;
+        align-self: center;
+
+        font-size: 2rem;
+        font-family: $font-secondary;
+    }
+
+    &__line-left {
+        grid-row: 2 / 3;
+        grid-column: 2 / -2;
+        justify-self: center;
+        align-self: center;
+
+        height: 4.5rem;
+        width: 3px;
+        background: #65E6AB;
+        margin-right: 20rem;
+    }
+
+    &__email {
+        grid-row: 2 / 3;
+        grid-column: 4 / 5;
+        justify-self: flex-start;
+        align-self: center;
+
+        font-size: 2rem;
+        font-family: $font-secondary;
+    }
+
+    &__line-right {
+        grid-row: 2 / 3;
+        grid-column: 2 / -2;
+        justify-self: center;
+        align-self: center;
+
+        height: 4.5rem;
+        width: 3px;
+        background: #65E6AB;
+        margin-left: 20rem;
+    }
+
+    &__facebook {
+        grid-row: 2 / 3;
+        grid-column: 2 / -2;
+        justify-self: center;
+        align-self: center;
+
+        width: 5rem;
+        height: 5rem;
+        fill: #fff;
+    }
+}
