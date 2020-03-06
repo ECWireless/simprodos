@@ -34,6 +34,20 @@
 
         font-size: 2rem;
         font-family: $font-secondary;
+        color: #fff;
+        text-decoration: none;
+
+        transition: all .3s ease;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+
+        &:active,
+        &:focus {
+            transform: scale(.95);
+        }
     }
 
     &__line-left {
@@ -56,6 +70,20 @@
 
         font-size: 2rem;
         font-family: $font-secondary;
+        color: #fff;
+        text-decoration: none;
+
+        transition: all .3s ease;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+
+        &:active,
+        &:focus {
+            transform: scale(.95);
+        }
     }
 
     &__line-right {
@@ -70,12 +98,26 @@
         margin-left: 20rem;
     }
 
-    &__facebook {
+    &__facebook-link {
         grid-row: 2 / 3;
         grid-column: 2 / -2;
         justify-self: center;
         align-self: center;
 
+        transition: all .3s ease;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+
+        &:active,
+        &:focus {
+            transform: scale(.95);
+        }
+    }
+
+    &__facebook {
         width: 5rem;
         height: 5rem;
         fill: #fff;

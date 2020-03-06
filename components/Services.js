@@ -26,7 +26,7 @@ const Services = () => (
                 <title>truck</title>
                 <path d="M32 18l-4-8h-6v-4c0-1.1-0.9-2-2-2h-18c-1.1 0-2 0.9-2 2v16l2 2h2.536c-0.341 0.588-0.536 1.271-0.536 2 0 2.209 1.791 4 4 4s4-1.791 4-4c0-0.729-0.196-1.412-0.536-2h11.073c-0.341 0.588-0.537 1.271-0.537 2 0 2.209 1.791 4 4 4s4-1.791 4-4c0-0.729-0.196-1.412-0.537-2h2.537v-6zM22 18v-6h4.146l3 6h-7.146z"></path>
             </svg>
-            <button className="services__button">Get a Quote</button>
+            <a href="mailto:simprodos@gmail.com" className="services__button">Get a Quote</a>
         </div>
 
         {/* ORGANIZING WHOLE AREA */}
@@ -47,7 +47,7 @@ const Services = () => (
                 <title>home</title>
                 <path d="M32 18.451l-16-12.42-16 12.42v-5.064l16-12.42 16 12.42zM28 18v12h-8v-8h-8v8h-8v-12l12-9z"></path>
             </svg>
-            <button className="services__button">Get a Quote</button>
+            <a href="mailto:simprodos@gmail.com" className="services__button">Get a Quote</a>
         </div>
 
         {/* ORGANIZING */}
@@ -72,7 +72,7 @@ const Services = () => (
                 <path d="M23 16h-14c-0.552 0-1-0.448-1-1s0.448-1 1-1h14c0.552 0 1 0.448 1 1s-0.448 1-1 1z"></path>
                 <path d="M25 20h-18c-0.552 0-1-0.448-1-1s0.448-1 1-1h18c0.552 0 1 0.448 1 1s-0.448 1-1 1z"></path>
             </svg>
-            <button className="services__button">Get a Quote</button>
+            <a href="mailto:simprodos@gmail.com" className="services__button">Get a Quote</a>
         </div>
 
         {/* SPACE PLANNING */}
@@ -94,7 +94,7 @@ const Services = () => (
                 <path d="M0 32h13l-5-5 6-6-3-3-6 6-5-5z"></path>
                 <path d="M0 0v13l5-5 6 6 3-3-6-6 5-5z"></path>
             </svg>
-            <button className="services__button">Get a Quote</button>
+            <a href="mailto:simprodos@gmail.com" className="services__button">Get a Quote</a>
         </div>
     </div>
 )
