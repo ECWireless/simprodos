@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 45rem 45rem 1fr;
     grid-template-rows: 20rem repeat(4, 10rem);
+    overflow: hidden;
 
     &__heading {
         grid-row: 1 / 2;
@@ -65,16 +66,31 @@
         width: 70rem;
         border-radius: 50%;
         background: $color-blue;
+        z-index: -1;
+
+        @include respond(tab-land) {
+            left: -45rem;
+        }
     }
 
     &__circle-right {
-        position: absolute;
-        top: 10rem;
-        right: -25rem;
+
+        // position: absolute;
+        // top: 10rem;
+        // right: -25rem;
+
+        grid-row: 1 / 2;
+        grid-column: 1 / -1;
+        justify-self: flex-end;
+        transform: translate(25rem, 5rem);
 
         height: 50rem;
         width: 50rem;
         border-radius: 50%;
         background: $color-green;
+
+        @include respond(tab-land) {
+            transform: translate(35rem, 8rem);
+        }
     }
 }
