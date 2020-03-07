@@ -4,6 +4,11 @@
     grid-template-rows: 20rem repeat(4, 10rem);
     overflow: hidden;
 
+    @include respond(tab-port) {
+        grid-template-columns: 1fr 30rem 30rem 1fr;
+        grid-template-rows: 20rem repeat(3, 10rem);
+    }
+
     &__heading {
         grid-row: 1 / 2;
         grid-column: 2 / -2;
@@ -71,13 +76,16 @@
         @include respond(tab-land) {
             left: -45rem;
         }
+
+        @include respond(tab-port) {
+            top: 2rem;
+            left: -5rem;
+            height:15rem;
+            width: 15rem;
+        }
     }
 
     &__circle-right {
-
-        // position: absolute;
-        // top: 10rem;
-        // right: -25rem;
 
         grid-row: 1 / 2;
         grid-column: 1 / -1;
@@ -88,9 +96,16 @@
         width: 50rem;
         border-radius: 50%;
         background: $color-green;
+        z-index: -1;
 
         @include respond(tab-land) {
             transform: translate(35rem, 8rem);
+        }
+
+        @include respond(tab-port) {
+            height: 8rem;
+            width: 8rem;
+            transform: translate(4rem, 13rem);
         }
     }
 }

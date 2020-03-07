@@ -3,6 +3,10 @@
     grid-template-columns: 1fr 5rem 40rem 40rem 5rem 1fr;
     grid-template-rows: 10rem 5rem 50rem;
 
+    @include respond(tab-port) {
+        grid-template-columns: 1fr 2rem 28rem 28rem 2rem 1fr;
+    }
+
     // HEADING
     &__subheading {
         grid-row: 1 / 2;
