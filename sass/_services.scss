@@ -13,6 +13,11 @@
         grid-template-rows: 9rem repeat(4, 35rem 30rem) 5rem;
     }
 
+    @include respond(small-phone) {
+        grid-template-columns: 1fr 15rem 15rem 1fr;
+        grid-template-rows: 8rem repeat(4, 35rem 30rem) 5rem;
+    }
+
     // HEADING
     &__subheading {
         grid-row: 1 / 2;
@@ -40,6 +45,11 @@
         height: 3px;
         width: 13rem;
         background: $color-blue;
+
+        @include respond(small-phone) {
+            margin-bottom: 1rem;
+            width: 10rem;
+        }
     }
 
     &__heading {
@@ -54,6 +64,10 @@
 
         @include respond(phone) {
             font-size: 3.2rem;
+        }
+
+        @include respond(small-phone) {
+            font-size: 2.4rem;
         }
     }
 

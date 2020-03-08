@@ -22,7 +22,7 @@
     }
 
     @include respond(small-phone) {
-        grid-template-columns: 1fr 18rem 18rem 1fr;
+        grid-template-columns: 1fr 15rem 15rem 1fr;
     }
 
     &__container {
@@ -37,6 +37,10 @@
         @include respond(phone) {
             grid-column: 1 / -1;
             grid-template-columns: 1fr 20rem 1fr;
+        }
+
+        @include respond(small-phone) {
+            grid-template-columns: 1fr 15rem 1fr;
         }
     }
 
@@ -69,6 +73,11 @@
         width: 4rem;
         height: 4rem;
         fill: $color-blue;
+
+        @include respond(small-phone) {
+            width: 3rem;
+            height: 3rem;
+        }
     }
 
     &__overlay-list {
@@ -88,6 +97,10 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr repeat(4, 8rem) 1fr;
+
+        @include respond(small-phone) {
+            font-size: 2.4rem;
+        }
     }
 
     &__overlay-about {
@@ -132,6 +145,11 @@
             margin-left: 2rem;
             fill: $color-blue;
         }
+
+        @include respond(small-phone) {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
         
     }
 
@@ -142,6 +160,10 @@
         @include respond(phone) {
             grid-column: 1 / -1;
             grid-row: 1 / -1;
+        }
+
+        @include respond(small-phone) {
+            height: 3rem;
         }
 
         &:hover {
@@ -175,6 +197,10 @@
             grid-column: 1 / -1;
             grid-template-columns: 1fr 20rem 1fr;
         }
+
+        @include respond(small-phone) {
+            grid-template-columns: 1fr 15rem 1fr;
+        }
     }
 
     &__item {
@@ -206,6 +232,10 @@
             grid-row: 1 / -1;
             padding: 1rem 2rem;
             font-size: 1rem;
+        }
+
+        @include respond(small-phone) {
+            padding: .8rem 1rem;
         }
 
         &:hover {

@@ -13,6 +13,11 @@
         grid-template-rows: 9rem 65rem;
     }
 
+    @include respond(small-phone) {
+        grid-template-columns: 1fr 15rem 15rem 1fr;
+        grid-template-rows: 8rem 55rem;
+    }
+
     &__subheading {
         grid-row: 1 / 2;
         grid-column: 2 / 4;
@@ -39,6 +44,11 @@
         height: 3px;
         width: 13rem;
         background: $color-blue;
+
+        @include respond(small-phone) {
+            margin-bottom: 1rem;
+            width: 10rem;
+        }
     }
 
     &__heading {
@@ -53,6 +63,10 @@
 
         @include respond(phone) {
             font-size: 3.2rem;
+        }
+
+        @include respond(small-phone) {
+            font-size: 2.4rem;
         }
     }
 
@@ -82,6 +96,12 @@
         @include respond(phone) {
             margin-right: 0rem;
         }
+
+        @include respond(small-phone) {
+            width: 22rem;
+            font-size: 1rem;
+            margin-bottom: 16rem;
+        }
     }
 
     &__description-2 {
@@ -109,6 +129,11 @@
 
         @include respond(phone) {
             margin-right: 0rem;
+        }
+
+        @include respond(small-phone) {
+            width: 23rem;
+            font-size: 1rem;
         }
     }
 
@@ -138,6 +163,12 @@
         @include respond(phone) {
             margin-right: 0rem;
         }
+
+        @include respond(small-phone) {
+            width: 19rem;
+            font-size: 1rem;
+            margin-top: 22rem;
+        }
     }
 
     &__circle-description {
@@ -162,6 +193,11 @@
 
         @include respond(phone) {
             margin-right: 0rem;
+        }
+
+        @include respond(small-phone) {
+            width: 30rem;
+            height: 30rem;
         }
     }
 
@@ -190,6 +226,12 @@
             margin-left: 0rem;
             margin-bottom: 42rem;
             z-index: 4;
+        }
+
+        @include respond(small-phone) {
+            width: 8rem;
+            height: 8rem;
+            margin-bottom: 35rem;
         }
     }
 
@@ -221,6 +263,12 @@
             margin-bottom: 42rem;
             z-index: 3;
         }
+
+        @include respond(small-phone) {
+            width: 10rem;
+            height: 10rem;
+            margin-bottom: 35rem;
+        }
     }
 
     &__circle-accent {
@@ -250,6 +298,12 @@
             margin-left: 0rem;
             margin-top: 42rem;
             z-index: 2;
+        }
+
+        @include respond(small-phone) {
+            width: 6rem;
+            height: 6rem;
+            margin-top: 32rem;
         }
     }
 }

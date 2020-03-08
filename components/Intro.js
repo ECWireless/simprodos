@@ -1,8 +1,25 @@
 function scrollToServices() {
-	window.scroll({
-		top: 1350,
-		behavior: 'smooth'
-	});
+		if (window.matchMedia('(max-width: 400px)').matches) {
+			window.scroll({
+				top: 1000,
+				behavior: 'smooth'
+			});
+		} else if (window.matchMedia('(max-width: 600px)').matches) {
+			window.scroll({
+				top: 1100,
+				behavior: 'smooth'
+			});
+		} else if (window.matchMedia('(max-width: 900px)').matches) {
+			window.scroll({
+				top: 1150,
+				behavior: 'smooth'
+			});
+		} else {
+			window.scroll({
+				top: 1350,
+				behavior: 'smooth'
+			});
+		}
 }
 
 const Intro = () => (

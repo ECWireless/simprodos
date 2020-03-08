@@ -8,7 +8,7 @@ export default class Header extends Component {
 
 	scrollToTop = () => {
 		window.scroll({
-			top: 0,
+			top: 20,
 			behavior: 'smooth'
 		});
 
@@ -19,10 +19,22 @@ export default class Header extends Component {
 	}
 
 	scrollToAbout = () => {
-		window.scroll({
-			top: 550,
-			behavior: 'smooth'
-		});
+		if (window.matchMedia('(max-width: 600px)').matches) {
+			window.scroll({
+				top: 350,
+				behavior: 'smooth'
+			});
+		} else if (window.matchMedia('(max-width: 900px)').matches) {
+			window.scroll({
+				top: 450,
+				behavior: 'smooth'
+			});
+		} else {
+			window.scroll({
+				top: 550,
+				behavior: 'smooth'
+			});
+		}
 
 		this.setState({
 			...this.state,
@@ -31,10 +43,27 @@ export default class Header extends Component {
 	}
 
 	scrollToServices = () => {
-		window.scroll({
-			top: 1350,
-			behavior: 'smooth'
-		});
+		if (window.matchMedia('(max-width: 400px)').matches) {
+			window.scroll({
+				top: 1000,
+				behavior: 'smooth'
+			});
+		} else if (window.matchMedia('(max-width: 600px)').matches) {
+			window.scroll({
+				top: 1100,
+				behavior: 'smooth'
+			});
+		} else if (window.matchMedia('(max-width: 900px)').matches) {
+			window.scroll({
+				top: 1150,
+				behavior: 'smooth'
+			});
+		} else {
+			window.scroll({
+				top: 1350,
+				behavior: 'smooth'
+			});
+		}
 
 		this.setState({
 			...this.state,
@@ -43,10 +72,27 @@ export default class Header extends Component {
 	}
 
 	scrollToTestimonials = () => {
-		window.scroll({
-			top: 3500,
-			behavior: 'smooth'
-		});
+		if (window.matchMedia('(max-width: 400px)').matches) {
+			window.scroll({
+				top: 3750,
+				behavior: 'smooth'
+			});
+		} else if (window.matchMedia('(max-width: 600px)').matches) {
+			window.scroll({
+				top: 3820,
+				behavior: 'smooth'
+			});
+		} else if (window.matchMedia('(max-width: 900px)').matches) {
+			window.scroll({
+				top: 2900,
+				behavior: 'smooth'
+			});
+		} else {
+			window.scroll({
+				top: 3500,
+				behavior: 'smooth'
+			});
+		}
 
 		this.setState({
 			...this.state,
@@ -55,10 +101,27 @@ export default class Header extends Component {
 	}
 
 	scrollToBlog = () => {
-		window.scroll({
-			top: 4100,
-			behavior: 'smooth'
-		});
+		if (window.matchMedia('(max-width: 400px)').matches) {
+			window.scroll({
+				top: 4700,
+				behavior: 'smooth'
+			});
+		} else if (window.matchMedia('(max-width: 600px)').matches) {
+			window.scroll({
+				top: 4800,
+				behavior: 'smooth'
+			});
+		} else if (window.matchMedia('(max-width: 900px)').matches) {
+			window.scroll({
+				top: 3420,
+				behavior: 'smooth'
+			});
+		} else {
+			window.scroll({
+				top: 4100,
+				behavior: 'smooth'
+			});
+		}
 
 		this.setState({
 			...this.state,

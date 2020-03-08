@@ -12,6 +12,11 @@
         grid-template-columns: 1fr 4rem 28rem 4rem 1fr;
     }
 
+    @include respond(small-phone) {
+        grid-template-columns: 1fr 4rem 22rem 4rem 1fr;
+        grid-template-rows: 8rem 5rem 35rem;
+    }
+
     // HEADING
     &__subheading {
         grid-row: 1 / 2;
@@ -39,6 +44,11 @@
         height: 3px;
         width: 13rem;
         background: $color-blue;
+
+        @include respond(small-phone) {
+            margin-bottom: 1rem;
+            width: 10rem;
+        }
     }
 
     &__heading {
@@ -53,6 +63,10 @@
 
         @include respond(phone) {
             font-size: 3.2rem;
+        }
+
+        @include respond(small-phone) {
+            font-size: 2.4rem;
         }
     }
 
@@ -87,6 +101,14 @@
             border-top: 20px solid transparent;
             border-bottom: 20px solid transparent;
             border-right: 40px solid #B8BCBF;
+        }
+
+        @include respond(small-phone) {
+            height: 2rem;
+            width: 2rem;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-right: 30px solid #B8BCBF;
         }
 
         &:hover {
@@ -127,6 +149,14 @@
             grid-column: 4 / 5;
         }
 
+        @include respond(small-phone) {
+            height: 2rem;
+            width: 2rem;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-left: 30px solid #B8BCBF;
+        }
+
         &:hover {
             cursor: pointer;
             transform: scale(1.1);
@@ -161,6 +191,12 @@
             grid-template-columns: 1fr 20rem 1fr;
         }
 
+        @include respond(small-phone) {
+            height: 26rem;
+            width: 20rem;
+            grid-template-columns: 1fr 15rem 1fr;
+        }
+
         &:hover {
             cursor: pointer;
         }
@@ -189,6 +225,10 @@
         @include respond(tab-port) { 
             font-size: 2rem;
         }
+
+        @include respond(small-phone) {
+            font-size: 1.8rem;
+        }
     }
 
     &__excerpt {
@@ -204,6 +244,11 @@
         @include respond(tab-port) { 
             font-size: 1.2rem;
             margin-top: 2rem;
+        }
+
+        @include respond(small-phone) {
+            font-size: 1.2rem;
+            line-height: 2rem;
         }
     }
 }
