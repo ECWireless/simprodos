@@ -7,7 +7,8 @@
     color: #fff;
 
     @include respond(tab-port) {
-        grid-template-columns: 1fr 20rem 20rem 20rem 1fr;
+        grid-template-columns: 1fr 23rem 14rem 23rem 1fr;
+        grid-template-rows: 8rem 12rem;
     }
 
     &__heading {
@@ -17,6 +18,10 @@
         align-self: center;
 
         font-size: 3.6rem;
+
+        @include respond(tab-port) {
+            font-size: 3.2rem;
+        }
     }
 
     &__line-top {
@@ -28,6 +33,10 @@
         height: 3px;
         width: 13rem;
         background: $color-blue;
+
+        @include respond(tab-port) {
+            width: 10rem;
+        }
     }
 
     &__number {
@@ -42,6 +51,11 @@
         text-decoration: none;
 
         transition: all .3s ease;
+
+        @include respond(tab-port) {
+            font-size: 1.8rem;
+            margin-right: 2rem;
+        }
 
         &:hover {
             cursor: pointer;
@@ -64,6 +78,10 @@
         width: 3px;
         background: #65E6AB;
         margin-right: 20rem;
+
+        @include respond(tab-port) {
+            margin-right: 14rem;
+        }
     }
 
     &__email {
@@ -78,6 +96,11 @@
         text-decoration: none;
 
         transition: all .3s ease;
+
+        @include respond(tab-port) {
+            font-size: 1.8rem;
+            margin-left: 2rem;
+        }
 
         &:hover {
             cursor: pointer;
@@ -100,6 +123,10 @@
         width: 3px;
         background: #65E6AB;
         margin-left: 20rem;
+
+        @include respond(tab-port) {
+            margin-left: 14rem;
+        }
     }
 
     &__facebook-link {

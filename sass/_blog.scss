@@ -4,7 +4,8 @@
     grid-template-rows: 10rem 5rem 50rem;
 
     @include respond(tab-port) {
-        grid-template-columns: 1fr 2rem 28rem 28rem 2rem 1fr;
+        grid-template-columns: 1fr 4rem 25rem 25rem 4rem 1fr;
+        grid-template-rows: 10rem 5rem 40rem;
     }
 
     // HEADING
@@ -68,6 +69,14 @@
 
         transition: all .3s ease;
 
+        @include respond(tab-port) { 
+            height: 3rem;
+            width: 3rem;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            border-right: 40px solid #B8BCBF;
+        }
+
         &:hover {
             cursor: pointer;
             transform: scale(1.1);
@@ -93,6 +102,14 @@
         border-left: 50px solid #B8BCBF;
 
         transition: all .3s ease;
+
+        @include respond(tab-port) { 
+            height: 3rem;
+            width: 3rem;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            border-left: 40px solid #B8BCBF;
+        }
 
         &:hover {
             cursor: pointer;
@@ -122,6 +139,12 @@
         grid-template-rows: 1fr 4fr;
         overflow: hidden;
 
+        @include respond(tab-port) { 
+            height: 26rem;
+            width: 22rem;
+            grid-template-columns: 1fr 20rem 1fr;
+        }
+
         &:hover {
             cursor: pointer;
         }
@@ -146,6 +169,10 @@
         font-size: 2.2rem;
         color: #fff;
         text-transform: uppercase;
+
+        @include respond(tab-port) { 
+            font-size: 2rem;
+        }
     }
 
     &__excerpt {
@@ -157,5 +184,10 @@
         line-height: 2.5rem;
         margin-top: 3rem;
         color: $color-grey;
+
+        @include respond(tab-port) { 
+            font-size: 1.2rem;
+            margin-top: 2rem;
+        }
     }
 }

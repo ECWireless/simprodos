@@ -5,6 +5,7 @@
 
     @include respond(tab-port) {
         grid-template-columns: 1fr 30rem 30rem 1fr;
+        grid-template-rows: 10rem 60rem;
     }
 
     &__subheading {
@@ -151,6 +152,7 @@
         @include respond(tab-port) {
             width: 24rem;
             height: 24rem;
+            margin-bottom: 26rem;
         }
     }
 
@@ -172,6 +174,7 @@
         @include respond(tab-port) {
             width: 26rem;
             height: 26rem;
+            margin-bottom: 25rem;
         }
     }
 
@@ -193,6 +196,7 @@
         @include respond(tab-port) {
             width: 20rem;
             height: 20rem;
+            margin-top: 14rem;
         }
     }
 }

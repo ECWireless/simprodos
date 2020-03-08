@@ -18,11 +18,11 @@
     }
 
     @include respond(phone) {
-        grid-template-columns: 1fr 25rem 25rem 1fr;
+        grid-template-columns: 1fr;
     }
 
     @include respond(small-phone) {
-        grid-template-columns: 1fr 20rem 20rem 1fr;
+        grid-template-columns: 1fr 18rem 18rem 1fr;
     }
 
     &__container {
@@ -33,11 +33,51 @@
         grid-template-rows: 1fr;
         align-items: center;
         justify-items: center;
+
+        @include respond(phone) {
+            grid-column: 1 / -1;
+            grid-template-columns: 1fr 20rem 1fr;
+        }
+    }
+
+    &__overlay {
+        display: none;
+
+        @include respond(phone) {
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            height: 100vh;
+            width: 100%;
+            background: #fff;
+        }
+    }
+
+    &__menu {
+        display: none;
+
+        @include respond(phone) {
+            display: inline-block;
+            grid-column: 1 / 2;
+            grid-row: 1 / -1;
+            justify-self: flex-start;
+
+            width: 3rem;
+            height: 3rem;
+            margin-left: 2rem;
+            fill: $color-blue;
+        }
+        
     }
 
     &__logo {
         grid-column: 1 / 2;
         height: 4rem;
+
+        @include respond(phone) {
+            grid-column: 1 / -1;
+            grid-row: 1 / -1;
+        }
 
         &:hover {
             cursor: pointer;
@@ -65,10 +105,19 @@
         @include respond(tab-port) {
             font-size: 1.2rem;
         }
+
+        @include respond(phone) {
+            grid-column: 1 / -1;
+            grid-template-columns: 1fr 20rem 1fr;
+        }
     }
 
     &__item {
         transition: all .3s ease;
+
+        @include respond(phone) {
+            display: none;
+        }
 
         &:hover {
             cursor: pointer;
@@ -85,6 +134,13 @@
 
         @include respond(tab-port) {
             padding: 1rem 2rem;
+        }
+
+        @include respond(phone) {
+            grid-column: 3 / -1;
+            grid-row: 1 / -1;
+            padding: 1rem 2rem;
+            font-size: 1rem;
         }
 
         &:hover {
