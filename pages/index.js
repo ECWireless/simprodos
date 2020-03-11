@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import "../sass/styles.scss"
+import "scroll-behavior-polyfill";
+
 
 // COMPONENTS
 import Header from '../components/Header'
