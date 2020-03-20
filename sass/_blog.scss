@@ -174,12 +174,15 @@
         }
     }
 
-    &__card {
+    &__card-link {
         grid-row: 3 / -1;
         grid-column: 3 / 4;
         justify-self: center;
         align-self: center;
+        text-decoration: none;
+    }
 
+    &__card {
         background: #fff;
         height: 33rem;
         width: 30rem;
@@ -190,6 +193,8 @@
         grid-template-columns: 1fr 22rem 1fr;
         grid-template-rows: 1fr 4fr;
         overflow: hidden;
+
+        transition: all .3s ease;
 
         @include respond(tab-port) { 
             height: 26rem;
@@ -205,6 +210,8 @@
 
         &:hover {
             cursor: pointer;
+            transform: scale(1.02);
+            box-shadow: $shadow-button-hover;
         }
     }
 
@@ -227,6 +234,8 @@
         font-size: 2.2rem;
         color: #fff;
         text-transform: uppercase;
+        letter-spacing: 5px;
+        font-weight: 100;
 
         @include respond(tab-port) { 
             font-size: 2rem;
