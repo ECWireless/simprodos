@@ -1,8 +1,33 @@
+import ScrollAnimation from 'react-animate-on-scroll';
+
 const Testimonials = () => (
     <div className="testimonials">
-        <h3 className="testimonials__subheading">Testimonials</h3>
-        <div className="testimonials__line" />
-        <h2 className="testimonials__heading">What People Say</h2>
+        <ScrollAnimation
+			className="testimonials__subheading-animation"
+			animateIn="fadeInUp"
+			duration="2"
+			animateOnce
+		>
+            <h3 className="testimonials__subheading">Testimonials</h3>
+        </ScrollAnimation>
+        <ScrollAnimation
+			className="testimonials__line-animation"
+			animateIn="fadeInUp"
+            duration="2"
+            delay="500"
+			animateOnce
+		>
+            <div className="testimonials__line" />
+        </ScrollAnimation>
+        <ScrollAnimation
+			className="testimonials__heading-animation"
+			animateIn="fadeInUp"
+			duration="2"
+            delay="1000"
+			animateOnce
+		>
+            <h2 className="testimonials__heading">What People Say</h2>
+        </ScrollAnimation>
 
         <div className="testimonials__circle" />
         <div className="testimonials__square" />

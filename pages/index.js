@@ -21,6 +21,7 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 				<link rel="stylesheet" href="https://use.typekit.net/dpw8jwa.css"></link>
 				<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"></link>
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"></link>
 			</Head>
 
 			<Header />

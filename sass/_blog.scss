@@ -18,11 +18,13 @@
     }
 
     // HEADING
-    &__subheading {
+    &__subheading-animation {
         grid-row: 1 / 2;
         grid-column: 1 / -1;
         align-self: flex-start;
+    }
 
+    &__subheading {
         font-size: 2rem;
         font-weight: 400;
         text-transform: uppercase;
@@ -34,13 +36,15 @@
         }
     }
 
-    &__line {
+    &__line-animation {
         grid-row: 1 / 2;
         grid-column: 1 / -1;
         align-self: center;
         justify-self: center;
         margin-bottom: 2rem;
+    }
 
+    &__line {
         height: 3px;
         width: 13rem;
         background: $color-blue;
@@ -51,11 +55,13 @@
         }
     }
 
-    &__heading {
+    &__heading-animation {
         grid-row: 1 / 2;
         grid-column: 1 / -1;
         align-self: flex-end;
+    }
 
+    &__heading {
         font-size: 4rem;
         font-weight: 400;
         text-align: center;

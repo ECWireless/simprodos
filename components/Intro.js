@@ -1,3 +1,5 @@
+import ScrollAnimation from 'react-animate-on-scroll';
+
 function scrollToServices() {
 		if (window.matchMedia('(max-width: 400px)').matches) {
 			window.scroll({
@@ -24,11 +26,41 @@ function scrollToServices() {
 
 const Intro = () => (
     <div className="intro">
-        <h1 className="intro__heading">Organizing Solutions for home and business</h1>
-        <p className="intro__paragraph">Helping you turn your dream into a goal, and your goal into a reality.
-            Organization moves you through the dream -- goal -- reality process.
-        </p>
-        <button className="intro__button" onClick={scrollToServices}>Our Services</button>
+        <ScrollAnimation
+			className="intro__heading-animation"
+			animateIn="fadeInUp"
+			duration="2"
+			animateOnce
+		>
+				<h1 className="intro__heading">Organizing Solutions for home and business</h1>
+		</ScrollAnimation>
+        <ScrollAnimation
+			className="intro__paragraph-1-animation"
+			animateIn="fadeInUp"
+			duration="2"
+			delay="500"
+			animateOnce
+		>
+			<p className="intro__paragraph-1">Turning your dream into a goal, and your goal into a reality.</p>
+		</ScrollAnimation>
+		<ScrollAnimation
+			className="intro__paragraph-2-animation"
+			animateIn="fadeInUp"
+			duration="2"
+			delay="1000"
+			animateOnce
+		>
+			<p className="intro__paragraph-2">SimProdos moves you through the dream -- goal -- reality process.</p>
+		</ScrollAnimation>
+        <ScrollAnimation
+			className="intro__button-animation"
+			animateIn="fadeInUp"
+			duration="2"
+			delay="1500"
+			animateOnce
+		>
+			<button className="intro__button" onClick={scrollToServices}>Our Services</button>
+		</ScrollAnimation>
         <div className="intro__circle-left" />
         <div className="intro__circle-right" />
     </div>

@@ -1,8 +1,33 @@
+import ScrollAnimation from 'react-animate-on-scroll';
+
 const About = () => (
     <div className="about">
-        <h3 className="about__subheading">About</h3>
-        <div className="about__line" />
-        <h2 className="about__heading">Meet Pat Thomas</h2>
+        <ScrollAnimation
+			className="about__subheading-animation"
+			animateIn="fadeInUp"
+			duration="2"
+			animateOnce
+		>
+            <h3 className="about__subheading">About</h3>
+        </ScrollAnimation>
+        <ScrollAnimation
+			className="about__line-animation"
+			animateIn="fadeInUp"
+            duration="2"
+            delay="500"
+			animateOnce
+		>
+            <div className="about__line" />
+        </ScrollAnimation>
+        <ScrollAnimation
+			className="about__heading-animation"
+			animateIn="fadeInUp"
+			duration="2"
+            delay="1000"
+			animateOnce
+		>
+            <h2 className="about__heading">Meet Pat Thomas</h2>
+        </ScrollAnimation>
 
         <p className="about__description-1">I am Pat Thomas owner of SimProdos
             (Simple, Productive, Organizing, Solutions).

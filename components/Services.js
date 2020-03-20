@@ -1,10 +1,31 @@
-
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Services = () => (
     <div className="services">
-        <h3 className="services__subheading">Services</h3>
-        <div className="services__line" />
-        <h2 className="services__heading">What SimProdos Offers</h2>
+        <ScrollAnimation
+			className="services__subheading-animation"
+			animateIn="fadeInUp"
+			duration="2"
+			animateOnce
+		>
+            <h3 className="services__subheading">Services</h3>
+        </ScrollAnimation>
+        <ScrollAnimation
+			className="services__line-animation"
+			animateIn="fadeInUp"
+			duration="2"
+			animateOnce
+		>
+            <div className="services__line" />
+        </ScrollAnimation>
+        <ScrollAnimation
+			className="services__heading-animation"
+			animateIn="fadeInUp"
+			duration="2"
+			animateOnce
+		>
+            <h2 className="services__heading">What SimProdos Offers</h2>
+        </ScrollAnimation>
 
         {/* MOVING ASSISTANT */}
         <div className="services__circle services__circle--1" />
@@ -41,7 +62,7 @@ const Services = () => (
             <ul className="services__list services__list--2">
                 <li className="services__item">Clearing and Area</li>
                 <li className="services__item">Donate, Toss, and Keep</li>
-                <li className="services__item">Space Planning for Space</li>
+                <li className="services__item">Space Planning</li>
             </ul>
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" className="services__svg services__svg--2" viewBox="0 0 32 32">
                 <title>home</title>

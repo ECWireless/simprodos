@@ -29,9 +29,14 @@ export default class Header extends Component {
 				top: 450,
 				behavior: 'smooth'
 			});
-		} else {
+		} else if (window.matchMedia('(max-width: 1800px)').matches) {
 			window.scroll({
 				top: 550,
+				behavior: 'smooth'
+			});
+		} else {
+			window.scroll({
+				top: 850,
 				behavior: 'smooth'
 			});
 		}
@@ -58,9 +63,14 @@ export default class Header extends Component {
 				top: 1150,
 				behavior: 'smooth'
 			});
-		} else {
+		} else if (window.matchMedia('(max-width: 1800px)').matches) {
 			window.scroll({
 				top: 1350,
+				behavior: 'smooth'
+			});
+		} else {
+			window.scroll({
+				top: 1650,
 				behavior: 'smooth'
 			});
 		}
@@ -87,9 +97,14 @@ export default class Header extends Component {
 				top: 2900,
 				behavior: 'smooth'
 			});
-		} else {
+		} else if (window.matchMedia('(max-width: 1800px)').matches) {
 			window.scroll({
 				top: 3500,
+				behavior: 'smooth'
+			});
+		} else {
+			window.scroll({
+				top: 3800,
 				behavior: 'smooth'
 			});
 		}
@@ -116,9 +131,14 @@ export default class Header extends Component {
 				top: 3420,
 				behavior: 'smooth'
 			});
-		} else {
+		} else if (window.matchMedia('(max-width: 1800px)').matches) {
 			window.scroll({
 				top: 4100,
+				behavior: 'smooth'
+			});
+		} else {
+			window.scroll({
+				top: 4400,
 				behavior: 'smooth'
 			});
 		}
