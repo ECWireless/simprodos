@@ -1,21 +1,21 @@
 .about {
     display: grid;
     grid-template-columns: 1fr 45rem 45rem 1fr;
-    grid-template-rows: 10rem 70rem;
+    grid-template-rows: 10rem 70rem 20rem;
 
     @include respond(tab-port) {
         grid-template-columns: 1fr 30rem 30rem 1fr;
-        grid-template-rows: 10rem 60rem;
+        grid-template-rows: 10rem 60rem 12rem;
     }
 
     @include respond(phone) {
         grid-template-columns: 1fr 20rem 20rem 1fr;
-        grid-template-rows: 9rem 65rem;
+        grid-template-rows: 9rem 65rem 10rem;
     }
 
     @include respond(small-phone) {
         grid-template-columns: 1fr 15rem 15rem 1fr;
-        grid-template-rows: 8rem 55rem;
+        grid-template-rows: 8rem 55rem 10rem;
     }
 
     &__subheading-animation {
@@ -310,6 +310,37 @@
             width: 6rem;
             height: 6rem;
             margin-top: 32rem;
+        }
+    }
+
+    &__napo-link {
+        grid-row: 3 / 4;
+        grid-column: 2 / 4;
+        align-self: flex-start;
+        justify-self: center;
+
+        height: 10rem;
+        width: 17.777rem;
+        transform: translateY(-5rem);
+
+        transition: all .5s ease;
+
+        @include respond(tab-port) {
+            height: 6rem;
+            width: 10.666rem;
+        }
+
+        &:hover {
+            box-shadow: $shadow-button-hover;
+            transform: translateY(-5rem) scale(1.03);
+        }
+    }
+
+    &__napo {
+        height: 10rem;
+
+        @include respond(tab-port) {
+            height: 6rem;
         }
     }
 }

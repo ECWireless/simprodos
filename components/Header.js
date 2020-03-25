@@ -50,27 +50,27 @@ export default class Header extends Component {
 	scrollToServices = () => {
 		if (window.matchMedia('(max-width: 400px)').matches) {
 			window.scroll({
-				top: 1000,
+				top: 1100,
 				behavior: 'smooth'
 			});
 		} else if (window.matchMedia('(max-width: 600px)').matches) {
 			window.scroll({
-				top: 1100,
+				top: 1200,
 				behavior: 'smooth'
 			});
 		} else if (window.matchMedia('(max-width: 900px)').matches) {
 			window.scroll({
-				top: 1150,
+				top: 1270,
 				behavior: 'smooth'
 			});
 		} else if (window.matchMedia('(max-width: 1800px)').matches) {
 			window.scroll({
-				top: 1350,
+				top: 1550,
 				behavior: 'smooth'
 			});
 		} else {
 			window.scroll({
-				top: 1650,
+				top: 1850,
 				behavior: 'smooth'
 			});
 		}
@@ -84,27 +84,27 @@ export default class Header extends Component {
 	scrollToTestimonials = () => {
 		if (window.matchMedia('(max-width: 400px)').matches) {
 			window.scroll({
-				top: 3750,
+				top: 3850,
 				behavior: 'smooth'
 			});
 		} else if (window.matchMedia('(max-width: 600px)').matches) {
 			window.scroll({
-				top: 3820,
+				top: 3970,
 				behavior: 'smooth'
 			});
 		} else if (window.matchMedia('(max-width: 900px)').matches) {
 			window.scroll({
-				top: 2900,
+				top: 3020,
 				behavior: 'smooth'
 			});
 		} else if (window.matchMedia('(max-width: 1800px)').matches) {
 			window.scroll({
-				top: 3500,
+				top: 3700,
 				behavior: 'smooth'
 			});
 		} else {
 			window.scroll({
-				top: 3800,
+				top: 4000,
 				behavior: 'smooth'
 			});
 		}
@@ -118,27 +118,27 @@ export default class Header extends Component {
 	scrollToBlog = () => {
 		if (window.matchMedia('(max-width: 400px)').matches) {
 			window.scroll({
-				top: 4700,
+				top: 4800,
 				behavior: 'smooth'
 			});
 		} else if (window.matchMedia('(max-width: 600px)').matches) {
 			window.scroll({
-				top: 4800,
+				top: 4950,
 				behavior: 'smooth'
 			});
 		} else if (window.matchMedia('(max-width: 900px)').matches) {
 			window.scroll({
-				top: 3420,
+				top: 3540,
 				behavior: 'smooth'
 			});
 		} else if (window.matchMedia('(max-width: 1800px)').matches) {
 			window.scroll({
-				top: 4100,
+				top: 4300,
 				behavior: 'smooth'
 			});
 		} else {
 			window.scroll({
-				top: 4400,
+				top: 4600,
 				behavior: 'smooth'
 			});
 		}

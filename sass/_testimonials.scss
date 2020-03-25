@@ -11,12 +11,12 @@
 
     @include respond(phone) {
         grid-template-columns: 1fr 30rem 1fr;
-        grid-template-rows: 10rem 5rem repeat(3, 19rem 5rem) 10rem;
+        grid-template-rows: 10rem 5rem repeat(3, 19rem 5rem) 10rem 5rem;
     }
 
     @include respond(small-phone) {
         grid-template-columns: 1fr 28rem 1fr;
-        grid-template-rows: 8rem 5rem repeat(3, 19rem 5rem) 10rem;
+        grid-template-rows: 8rem 5rem repeat(3, 19rem 5rem) 10rem 5rem;
     }
 
     // HEADING
@@ -103,7 +103,7 @@
         @include respond(phone) {
             position: static;
             align-self: center;
-            grid-row: 2 / -1;
+            grid-row: 2 / -2;
 
             border-radius: 0;
             transform: translate(0, 0);

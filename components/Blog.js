@@ -5,7 +5,7 @@ const Blog = () => (
         <ScrollAnimation
 			className="blog__subheading-animation"
 			animateIn="fadeInUp"
-			duration="2"
+			duration={2}
 			animateOnce
 		>
             <h3 className="blog__subheading">Blog</h3>
@@ -13,8 +13,8 @@ const Blog = () => (
         <ScrollAnimation
 			className="blog__line-animation"
 			animateIn="fadeInUp"
-            duration="2"
-            delay="500"
+            duration={2}
+            delay={500}
 			animateOnce
 		>
             <div className="blog__line" />
@@ -22,8 +22,8 @@ const Blog = () => (
         <ScrollAnimation
 			className="blog__heading-animation"
 			animateIn="fadeInUp"
-			duration="2"
-            delay="1000"
+			duration={2}
+            delay={1000}
 			animateOnce
 		>
             <h2 className="blog__heading">Tips and Tricks</h2>

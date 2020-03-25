@@ -5,7 +5,7 @@ const About = () => (
         <ScrollAnimation
 			className="about__subheading-animation"
 			animateIn="fadeInUp"
-			duration="2"
+			duration={2}
 			animateOnce
 		>
             <h3 className="about__subheading">About</h3>
@@ -13,8 +13,8 @@ const About = () => (
         <ScrollAnimation
 			className="about__line-animation"
 			animateIn="fadeInUp"
-            duration="2"
-            delay="500"
+            duration={2}
+            delay={500}
 			animateOnce
 		>
             <div className="about__line" />
@@ -22,8 +22,8 @@ const About = () => (
         <ScrollAnimation
 			className="about__heading-animation"
 			animateIn="fadeInUp"
-			duration="2"
-            delay="1000"
+			duration={2}
+            delay={1000}
 			animateOnce
 		>
             <h2 className="about__heading">Meet Pat Thomas</h2>
@@ -57,6 +57,14 @@ const About = () => (
         <div className="about__circle-photo" />
 
         <div className="about__circle-accent" />
+
+        <a href="https://www.napopittsburgh.org/" target="_blank" className="about__napo-link">
+            <img
+                className="about__napo"
+                src="/NAPO.png"
+                alt="NAPO"
+            />
+        </a>
     </div>
 )
 

@@ -5,7 +5,7 @@ const Testimonials = () => (
         <ScrollAnimation
 			className="testimonials__subheading-animation"
 			animateIn="fadeInUp"
-			duration="2"
+			duration={2}
 			animateOnce
 		>
             <h3 className="testimonials__subheading">Testimonials</h3>
@@ -13,8 +13,8 @@ const Testimonials = () => (
         <ScrollAnimation
 			className="testimonials__line-animation"
 			animateIn="fadeInUp"
-            duration="2"
-            delay="500"
+            duration={2}
+            delay={500}
 			animateOnce
 		>
             <div className="testimonials__line" />
@@ -22,8 +22,8 @@ const Testimonials = () => (
         <ScrollAnimation
 			className="testimonials__heading-animation"
 			animateIn="fadeInUp"
-			duration="2"
-            delay="1000"
+			duration={2}
+            delay={1000}
 			animateOnce
 		>
             <h2 className="testimonials__heading">What People Say</h2>

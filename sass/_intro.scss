@@ -108,8 +108,8 @@
         }
 
         @include respond(small-phone) {
-            width:25rem;
-            margin: 9rem auto 0;
+            width: 25rem;
+            margin: 5rem auto 0;
         }
 
         @include respond(big-desktop) {

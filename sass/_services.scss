@@ -10,12 +10,12 @@
 
     @include respond(phone) {
         grid-template-columns: 1fr 20rem 20rem 1fr;
-        grid-template-rows: 9rem repeat(4, 35rem 30rem) 5rem;
+        grid-template-rows: 9rem repeat(4, 35rem 30rem) 10rem;
     }
 
     @include respond(small-phone) {
         grid-template-columns: 1fr 15rem 15rem 1fr;
-        grid-template-rows: 8rem repeat(4, 35rem 30rem) 5rem;
+        grid-template-rows: 8rem repeat(4, 35rem 30rem) 10rem;
     }
 
     // HEADING
@@ -272,12 +272,13 @@
 
         font-size: 1.4rem;
         color: #B8BCBF;
-        width: 18rem;
+        width: 20rem;
         margin: 0 auto;
 
 
         @include respond(tab-port) {
             font-size: 1.4rem;
+            width: 18rem;
         }
     }
 

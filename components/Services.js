@@ -5,7 +5,7 @@ const Services = () => (
         <ScrollAnimation
 			className="services__subheading-animation"
 			animateIn="fadeInUp"
-			duration="2"
+			duration={2}
 			animateOnce
 		>
             <h3 className="services__subheading">Services</h3>
@@ -13,7 +13,7 @@ const Services = () => (
         <ScrollAnimation
 			className="services__line-animation"
 			animateIn="fadeInUp"
-			duration="2"
+			duration={2}
 			animateOnce
 		>
             <div className="services__line" />
@@ -21,7 +21,7 @@ const Services = () => (
         <ScrollAnimation
 			className="services__heading-animation"
 			animateIn="fadeInUp"
-			duration="2"
+			duration={2}
 			animateOnce
 		>
             <h2 className="services__heading">What SimProdos Offers</h2>
@@ -81,7 +81,8 @@ const Services = () => (
         <div className="services__container services__container--3">
             <h3 className="services__services-heading">Organizing</h3>
             <ul className="services__list services__list--3">
-                <li className="services__item" style={{marginBottom: '2rem'}}>Organizing small spaces.</li>
+                <li className="services__item">Organizing small spaces</li>
+                <li className="services__item">Virtual organizing</li>
                 <li className="services__item">Includes closet, pantry, drawer clean
                     out and reorganize. With or without
                     client present.
