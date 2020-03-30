@@ -322,12 +322,29 @@
         height: 10rem;
         width: 17.777rem;
         transform: translateY(-5rem);
+        border-radius: 10px;
 
         transition: all .5s ease;
 
         @include respond(tab-port) {
             height: 6rem;
             width: 10.666rem;
+        }
+
+        &--1 {
+            margin-right: 25rem;
+
+            @include respond(tab-port) {
+                margin-right: 15rem;
+            }
+        }
+
+        &--2 {
+            margin-left: 25rem;
+
+            @include respond(tab-port) {
+                margin-left: 15rem;
+            }
         }
 
         &:hover {
@@ -338,6 +355,7 @@
 
     &__napo {
         height: 10rem;
+        border-radius: 10px;
 
         @include respond(tab-port) {
             height: 6rem;

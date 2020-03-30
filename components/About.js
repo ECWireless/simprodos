@@ -58,7 +58,20 @@ const About = () => (
 
         <div className="about__circle-accent" />
 
-        <a href="https://www.napopittsburgh.org/" target="_blank" className="about__napo-link">
+        <a
+            href="https://www.napo.net/default.aspx" target="_blank"
+            className="about__napo-link about__napo-link--1"
+        >
+            <img
+                className="about__napo"
+                src="/NAPO.png"
+                alt="NAPO"
+            />
+        </a>
+        <a
+            href="http://www.napopittsburgh.org/" target="_blank"
+            className="about__napo-link about__napo-link--2"
+        >
             <img
                 className="about__napo"
                 src="/NAPO.png"
